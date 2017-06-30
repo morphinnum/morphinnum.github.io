@@ -1,0 +1,304 @@
+<style
+
+.lapkin {
+  width: 800px; 
+  font-family: sans-serif; 
+  color: #fff; 
+  text-align: center; 
+  padding-top: 220px;
+}
+
+.head {
+  margin-left: -0.5%;
+  margin-top: -0.5%;
+  margin-bottom: -2%;
+    height: 700px;
+    width: 110%; 
+    padding-left: 15px; /* Отступ от текста слева */
+    background-image: url(../images/header-bg.jpg);
+    background-size: 100%
+    }
+/*навигация*/
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background:#ff2b4a; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#ff2b4a; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #F36262; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+  background:#D43737;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+
+table {
+	margin-left: 8%; 
+	margin-top: 2%; 
+	margin-bottom: 2%;
+}
+
+/*шрифт для визитки*/
+.hi {
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*working process*/
+.work {
+	background-color: #D3D3D3; 
+	height: 200px;
+	font-family: sans-serif;
+  text-align: center;
+	color: #2D2D2D;
+	font-size: 20px;
+	margin-top: -3%;
+	margin-right: -1%;
+}
+.work:after {
+	content: "";
+	height:50px;
+	width: 100%;
+	display: block;
+	background-color: #D3D3D3;
+}
+/* experience cont */
+.expbg {
+    margin-top: 3%;
+    height: 800px;
+    width: 100%; 
+    padding-left: 15px; /* Отступ от текста слева */
+    background-image: url(../images/city.jpg);
+    background-color: #dadada
+    }
+.experience{
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 50px;
+    height: 500px;
+    display: inline-block;
+    background-color: rgba(79, 50, 68, .7); width: 500px;
+}
+.content-border{
+    border-bottom:1px solid #dadada;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+/*latest works*/
+  .containerpics {
+  height: 500px;
+  font-family: sans-serif;
+  color: #2D2D2D;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  }
+  .pics {
+  border: 5px solid #fff;
+  }
+
+/*quote*/
+  .container {
+    background-color: #E7E7E7;
+    height: 700px;
+    margin-bottom: -1%;
+  }
+  .quote {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #7F7E7E;
+    background-color: #E7E7E7;
+  }
+
+
+/* расположение текста слева */
+  .lfl {
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-left: 8%;
+    margin-bottom: 2;
+    background-color: rgba(79, 50, 68, .7);
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+
+/* расположение текста справа */
+ .rfl {
+    float: right;
+    width: 500px;
+    height: 180px;
+    margin-right: 10%;
+    margin-bottom: 1.5%;
+    background-color: rgba(79, 50, 68, .7);
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+
+/* кнопки */
+ .button-hire {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #ff2b4a; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+ } 
+ .button-hire:hover { background: #ff697f; } /* при наведении курсора мышки */
+ .button-hire:active { background: #ff0126; } /* при нажатии */ 
+
+ .button-design {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #10c6fc; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+ } 
+ .button-design:hover { background: #89dff9; } /* при наведении курсора мышки */
+ .button-design:active { background: #006a8a; } /* при нажатии */
+
+ .button-development {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #835aeb; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+ } 
+ .button-development:hover { background: #9e90c1; } /* при наведении курсора мышки */
+ .button-development:active { background: #4e19d6; } /* при нажатии */
+
+ .button-testing {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #002453; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+   } 
+ .button-testing:hover { background: #416088; } /* при наведении курсора мышки */
+ .button-testing:active { background: #01152f; } /* при нажатии */
+
+ .button-launch {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #ff2b4a; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+ } 
+ .button-launch:hover { background: #ff697f; } /* при наведении курсора мышки */
+ .button-launch:active { background: #ff0126; } /* при нажатии */
+
+/*textarea placeholder*/
+  .contbg {
+    height: 900px;
+    width: 100%; 
+    padding-left: 15px; /* Отступ от текста слева */
+    background-image: url(../images/contact2.jpg);
+    background-size: 110%;
+    }
+
+ .placeh {
+ background: transparent; 
+ color: #fff;
+ width: 300px;
+ height: 50px;
+ padding-left: 10px;
+  }
+  .placeh::-webkit-input-placeholder {color:#CFCFCF;}
+  .placeh::-moz-placeholder          {color:#CFCFCF;}/* Firefox 19+ */
+  .placeh:-moz-placeholder           {color:#CFCFCF;}/* Firefox 18- */
+  .placeh:-ms-input-placeholder      {color:#CFCFCF;}
+
+  .input1::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+  .input1::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+  .input1:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+  .input1:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+  .input1:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+  .input1:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+  .input1:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+  .input1:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #2D2D2D;
+  color: #fff;
+  margin-top: -7%;
+}
+
+.twit {display:inline-block;vertical-align:bottom;width:24px;height:24px;margin:0 20px 0px  0;padding:0;outline:none;background:url(icons/icons.png) -0px 0 no-repeat;}
+
+.link {display:inline-block;vertical-align:bottom;width:24px;height:24px;margin:18px 20px 0px 0;padding:0;outline:none;background:url(icons/icons.png) -24px 0 no-repeat;}
+
+.brbr {display:inline-block;vertical-align:bottom;width:24px;height:24px;margin:0 20px 0px  0;padding:0;outline:none;background:url(icons/icons.png) -48px 0 no-repeat}
+
+.blog {display:inline-block;vertical-align:bottom;width:24px;height:24px;margin:0 20px 0px 0;padding:0;outline:none;background:url(icons/icons.png) -96px 0 no-repeat}
