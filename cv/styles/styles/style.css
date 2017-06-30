@@ -1,0 +1,158 @@
+<style
+
+html {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+/*навигация*/
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background:#ff2b4a; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#ff2b4a; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #F36262; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+  background:#D43737;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+
+table {
+	margin-left: 8%; 
+	margin-top: 2%; 
+	margin-bottom: 2%;
+}
+
+/*шрифт для визитки*/
+.hi {
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*working process*/
+.work {
+	background-color: #D3D3D3; 
+	height: 200px;
+	font-family: sans-serif;
+	color: #2D2D2D;
+	font-size: 20px;
+	margin-top: -3%;
+	margin-right: -1%;
+}
+.work:after {
+	content: "";
+	height:50px;
+	width: 100%;
+	display: block;
+	background-color: #D3D3D3;
+
+/* experience cont */
+
+/* расположение текста слева */
+	.ltext {
+	display: block;
+	float: left;
+	width: 550px;
+	border: 0px solid #000;
+	display: inline-block;
+	}
+/* расположение текста справа */
+ .rtext {
+ display: block;
+ float: right;
+ width: 550px; 
+ border: 0px solid #000;
+ }
+
+/* кнопки */
+ .button-hire {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #ff2b4a; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+ } 
+ .button-hire:hover { background: #ff697f; } /* при наведении курсора мышки */
+ .button-hire:active { background: #ff0126; } /* при нажатии */ 
+
+ .button-design {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #10c6fc; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+ } 
+ .button-design:hover { background: #89dff9; } /* при наведении курсора мышки */
+ .button-design:active { background: #006a8a; } /* при нажатии */
+
+ .button-development {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #835aeb; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+ } 
+ .button-development:hover { background: #9e90c1; } /* при наведении курсора мышки */
+ .button-development:active { background: #4e19d6; } /* при нажатии */
+
+ .button-testing {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #002453; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+ } 
+ .button-testing:hover { background: #416088; } /* при наведении курсора мышки */
+ .button-testing:active { background: #01152f; } /* при нажатии */
+
+ .button-launch {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  font-size: 20px;
+  user-select: none; /* убирать выделение текста */
+  background: #ff2b4a; /* фон кнопки */
+  border: 0px;
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; 
+  height: 200px;
+  width: 200px;
+ } 
+ .button-launch:hover { background: #ff697f; } /* при наведении курсора мышки */
+ .button-launch:active { background: #ff0126; } /* при нажатии */
