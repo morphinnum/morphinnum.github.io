@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>TEST</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/fancybox.css" media="screen" />
+<script type="text/javascript" src="js/js_jquery.js"></script> 
+<script type="text/javascript" src="js/core_ajaxconst.php"></script>
+<script type="text/javascript" src="js/jquery.selectbox.js"></script>
+<script type="text/javascript" src="js/js_scripts.js"></script>
+<script type="text/javascript">
+function setBigImage(foto) {
+$("#adpdp14").attr('href', $(foto).parent('.it').children('a').attr('href'));
+document.getElementById("dp14").src = foto.src;
+}
+</script>
+<link rel="stylesheet" href="styles/style.css">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+	<div class="container">
+	<div class="header-menu row">
+		<ul class="header-menu-container">
+			<li class="header-menu-container-item">О магазине</li>
+			<li class="header-menu-container-item">Baby клуб</li>
+			<li class="header-menu-container-item">Доставка и оплата</li>
+			<li class="header-menu-container-item">Новости</li>
+			<li class="header-menu-container-item">Контакты</li>
+		</ul>
+		<button class="header-menu-buttons header-menu-buttons-enter">Вход</button>
+		<button class="header-menu-buttons header-menu-buttons-fav">Избранное</button>
+		<button class="header-menu-buttons header-menu-buttons-basket">Корзина <span class="header-menu-buttons-basket-n">(6)</span></button>
+	</div>
+	</div>
+
+	<div class="new">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 header-contacts">
+				<span class="header-contacts-number">(044) 593 82 39</span><span class="header-contacts-number">0 800 50 77 12</span>
+				<button class="header-contacts-button">Callback</button>
+			</div>
+			<div class="col-lg-5 header-logo"></div>
+			<div class="col-lg-4 header-search">
+				<form action="" method="post" >
+		  			<input type="search" name="" placeholder="Поиск" class="header-search-input"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</header>
+
+<section class="container menu"> 
+	<div class="row">
+	<ul class="menu-container">
+			<li class="menu-container-item">Игры и Игрушки</li>
+			<li class="menu-container-item">Школа и Творчество</li>
+			<li class="menu-container-item">Одежда</li>
+			<li class="menu-container-item">Обувь</li>
+			<li class="menu-container-item">Кухня и Кормление</li>
+			<li class="menu-container-item">Гигиена и Уход</li>
+			<li class="menu-container-item">Спорт и Отдых</li>
+			<li class="menu-container-item">Детская и Коляски</li>
+		</ul>
+		</div>
+</section>
+
+<section class="container nav">
+	<div class="row">
+	<ul class="nav-container">
+			<li class="nav-container-item">Panama.ua</li>
+			<li class="nav-container-item">Игрушки</li>
+			<li class="nav-container-item">Конструкторы</li>
+			<li class="nav-container-item">LEGO</li>
+		</ul>
+		</div>
+</section>
+
+
+<main class="container main wrap">
+	<div class="row main-carousel">
+	<div class="col-lg-6">
+		    <div class="img">
+			<a href="img/1.jpg"  rel="example_group" id="adpdp14">
+			<img src="images/1.jpg" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
+		  </div>
+          <div class="thumbs">
+            <div class="it"><a style="display:none;" href="img/1.jpg" rel="example_group"></a>
+				<img src="images/1.jpg" onclick='setBigImage(this);' alt="" /></div>
+            <div class="it"><a style="display:none;" href="img/3.jpg" rel="example_group"></a>
+				<img src="images/3.jpg" onclick='setBigImage(this);' alt="" /></div>
+            <div class="it"><a style="display:none;" href="img/4.jpg" rel="example_group"></a>
+				<img src="images/4.jpg" onclick='setBigImage(this);' alt="" /></div>
+            <div class="it"><a style="display:none;" href="img/5.jpg" rel="example_group"></a>
+				<img src="images/5.jpg" onclick='setBigImage(this);' alt="" /></div>
+            <div class="it"><a style="display:none;" href="img/6.jpg" rel="example_group"></a>
+				<img src="images/6.jpg" onclick='setBigImage(this);' alt="" /></div>
+            <div class="it"><a style="display:none;" href="img/7.jpg" rel="example_group"></a>
+				<img src="images/7.jpg" onclick='setBigImage(this);' alt="" /></div>
+            <div class="clr"></div>
+          </div>
+    </div>
+	</div>
+	<div class="row main-info">
+	<div class="col-lg-6">
+		<div class="main-info-intro">
+			<span class="main-info-intro-h">Lego Creator</span>
+			Домик на холме, большая коробка 
+			с деталями и кубиками
+		</div>
+		<div class="house"></div>
+		<div class="main-info-price">
+			<span class="main-info-price-new">5748</span>грн 
+			<span class="main-info-price-old">6674 грн</span>
+		</div>
+		<div class="main-info-rating" id="reviewStars-input">
+		    <input id="star-4" type="radio" name="reviewStars"/>
+		    <label title="gorgeous" for="star-4"></label>
+		    <input id="star-3" type="radio" name="reviewStars"/>
+		    <label title="good" for="star-3"></label>
+		    <input id="star-2" type="radio" name="reviewStars"/>
+		    <label title="regular" for="star-2"></label>
+		    <input id="star-1" type="radio" name="reviewStars"/>
+		    <label title="poor" for="star-1"></label>
+		    <input id="star-0" type="radio" name="reviewStars"/>
+		    
+		</div>
+		<a href="#" class="main-info-p">54 отзыва</a>
+		<div class="main-info-sn">
+			<a href="#" class="main-info-sn-fb"></a>
+			<a href="#" class="main-info-sn-vk"></a>
+			<a href="#" class="main-info-sn-gg"></a>
+		</div>
+		<div class="main-info-sizes">
+			<p class="main-info-sizes-p">Размеры</p>
+			<input class="main-info-sizes-n" type="button" value="35">
+			<input class="main-info-sizes-n" type="button" value="37">
+			<input class="main-info-sizes-n" type="button" value="39">
+			<input class="main-info-sizes-n" type="button" value="41">
+			<input class="main-info-sizes-n" type="button" value="43">
+			<input class="main-info-sizes-n" type="button" value="39">
+			<input class="main-info-sizes-n" type="button" value="41">
+			<input class="main-info-sizes-n" type="button" value="43">
+		</div>
+		<div class="container">
+	  		<div class="row">
+		  		<div class="col-sm-3">
+					<div class="main-info-purchase">
+						<a href="#" class="main-info-purchase-active">В наличии!</a> <p class="main-info-purchase-code">Код товара: 382743</p>
+						<button class="main-info-purchase-button">Купить</button>
+					</div>
+					<div class="main-info-rating main-info-purchase-fav" id="heart-input">
+					<input id="star-0" type="radio" name="heart"/>
+					    <label title="fav" for="star-0"></label>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="main-info-dg">
+						<a href="#" class="main-info-dg-delivery">Бесплатная доставка!</a>
+						<a href="#" class="main-info-dg-delivery">Гарантия</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-info-description">
+			<span class="main-info-description-h">Описание товара</span>
+			Из этой прекрасной двухэтажной виллы (LEGO № 5771) из серии LEGO Creator можно  К тому же из виллы можно собрать еще два других дома.
+			<a onclick="$('#name').slideToggle('slow');" href="javascript://" class="main-info-description-link">полный текст</a>
+		 	<div id="name">Дополнительные характеристики: - работающий дверной звонок со звуком собачьего лая - на верхнем этаже камин - на вилле есть гараж с машиной - на вилле есть площадка для гриля со складным креслом и садовыми растениями - в набор входят мини-фигурка и собака - 3 разных модели: из виллы можно собрать два других дома.
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Размеры:</p> 48х38х95 см</span>
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Возраст:</p> 8+</span>
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Материал:</p>  пластмасса</span>
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Производитель:</p>  Lego</span>
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Сделано в:</p>  Дания</span>
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Комплектация:</p> 714 деталей</span> 
+			<span class="main-info-description-title"><p class="main-info-description-title-h">Артикул:</p> 5771</span></div>
+		</div>
+	</div>
+	</div>
+</main>
