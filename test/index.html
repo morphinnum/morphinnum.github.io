@@ -5,21 +5,27 @@
 <title>TEST</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
-<script type="text/javascript" src="js/js_jquery.js"></script> 
-<script type="text/javascript" src="js/core_ajaxconst.php"></script>
-<script type="text/javascript" src="js/jquery.selectbox.js"></script>
-<script type="text/javascript" src="js/js_scripts.js"></script>
-<script type="text/javascript">
-function setBigImage(foto) {
-$("#adpdp14").attr('href', $(foto).parent('.it').children('a').attr('href'));
-document.getElementById("dp14").src = foto.src;
-}
-</script>
+
+<script src="js/jquery-1.4.4.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 200,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+
 <link rel="stylesheet" href="styles/style.css">
 <meta charset="utf-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -88,23 +94,26 @@ document.getElementById("dp14").src = foto.src;
 <main class="container main wrap">
 	<div class="row main-carousel">
 	<div class="col-lg-6">
-		    <div class="img">
-			<a href="img/1.jpg"  rel="example_group" id="adpdp14">
-			<img src="images/1.jpg" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
-		  </div>
-          <div class="thumbs">
-            <div class="it"><a style="display:none;" href="img/1.jpg" rel="example_group"></a>
-				<img src="images/1.jpg" onclick='setBigImage(this);' alt="" /></div>
-            <div class="it"><a style="display:none;" href="img/3.jpg" rel="example_group"></a>
-				<img src="images/3.jpg" onclick='setBigImage(this);' alt="" /></div>
-            <div class="it"><a style="display:none;" href="img/4.jpg" rel="example_group"></a>
-				<img src="images/4.jpg" onclick='setBigImage(this);' alt="" /></div>
-            <div class="it"><a style="display:none;" href="img/5.jpg" rel="example_group"></a>
-				<img src="images/5.jpg" onclick='setBigImage(this);' alt="" /></div>
-            <div class="it"><a style="display:none;" href="img/6.jpg" rel="example_group"></a>
-				<img src="images/6.jpg" onclick='setBigImage(this);' alt="" /></div>
-            <div class="clr"></div>
-          </div>
+		<div id="products_example">
+			<div id="products">
+				<div id="products" class="slides_container" style="width: 366px;height: 338px;overflow: hidden;float: left;position: relative;border: 1px solid #dfdfdf;">
+					<a href="" target="_blank"><img src="images/1.jpg" width="366" alt="1144953 3 2x"></a>
+					<a href="" target="_blank"><img src="images/2.jpg" width="366" alt="1144953 1 2x"></a>
+					<a href="" target="_blank"><img src="images/3.jpg" width="366" alt="1144953 2 2x"></a>					
+					<a href="" target="_blank"><img src="images/4.jpg" width="366" alt="1144953 4 2x"></a>
+					<a href="" target="_blank"><img src="images/5.jpg" width="366" alt="1144953 5 2x"></a>
+					<a href="" target="_blank"><img src="images/6.jpg" width="366" alt="1144953 6 2x"></a>
+				</div>
+				<ul id="products" class="pagination" style="position: absolute; left: -73px; width: 0px;">
+					<li><a href="#"><img src="images/1.jpg" width="55" alt="1144953 3 2x"></a></li>
+					<li><a href="#"><img src="images/2.jpg" width="55" alt="1144953 1 2x"></a></li>
+					<li><a href="#"><img src="images/3.jpg" width="55" alt="1144953 2 2x"></a></li>
+					<li><a href="#"><img src="images/4.jpg" width="55" alt="1144953 4 2x"></a></li>
+					<li><a href="#"><img src="images/5.jpg" width="55" alt="1144953 5 2x"></a></li>
+					<li><a href="#"><img src="images/6.jpg" width="55" alt="1144953 6 2x"></a></li>
+				</ul>
+			</div>
+		</div>
     </div>
 	</div>
 	<div class="row main-info">
