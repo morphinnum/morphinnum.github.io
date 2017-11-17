@@ -193,7 +193,7 @@ function change_cart_items() {
 
 
 $(document).ready(function(){  
-	$('.newselect').selectbox();
+	$('.newselect').select();
   
   if($('#category_sel')[0]) {
 	$('li#category_sel').parents('ul').show();
@@ -403,7 +403,7 @@ $('.chk').click(function () {
     });
 
 // Jcarusel hits show
-    $(".carouselDiv .jCarouselLite").jCarouselLite({auto: JSonData.CONF_HITS_FRIQ, speed: JSonData.CONF_HITS_SPEED, vertical: true, visible: JSonData.CONF_SCROLL_HITS, easeInQuad: "easeOutQuad"});
+    $(".carouselDiv .jCarouselLite").show({auto: JSonData.CONF_HITS_FRIQ, speed: JSonData.CONF_HITS_SPEED, vertical: true, visible: JSonData.CONF_SCROLL_HITS, easeInQuad: "easeOutQuad"});
 
 // HideSlide hits show
     var fadeTime = 2000*(JSonData.CONF_HITS_FRIQ/10000);var i = $('.slide').length;var x = 0;showSlide();function showSlide(){curSlide = "#slide" + x;if(x == 0){prevSlide = "#slide" + (i - 1);} else {prevSlide = "#slide" + (x - 1);}$(prevSlide).fadeOut(fadeTime, function(){$(curSlide).fadeIn(fadeTime);if(x == (i - 1)){x = 0;} else {x++;}});setTimeout(showSlide, JSonData.CONF_HITS_FRIQ);}

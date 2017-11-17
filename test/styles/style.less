@@ -26,8 +26,15 @@
 }
 @font-face {
    font-family: 'opensans';
-   src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/OpenSans-Regular.ttf') format("truetype"),
+   src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.ttf') format("truetype"),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'gotham';
+   src: url('../fonts/GothamProRegular.ttf') format("truetype"),
         url('../fonts/OpenSans-Regular.woff') format('woff');
    font-weight: 400;
    font-style: normal;
@@ -177,11 +184,11 @@ body {
   border-bottom: 1px solid rgb(222, 222, 222);
   &-container {
     padding-left: 0;
-  margin-top: 5px;
-  color: @title-text;
-  text-align: center;
-  font-size: 14pt;
-  font-family: 'lato', sans-serif;
+    margin-top: 5px;
+    color: @title-text;
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'lato', sans-serif;
   &-item {
     cursor: pointer;
     display: inline-block;
@@ -206,7 +213,7 @@ body {
   color: @title-text;
   text-align: left;
   font-size: 12pt;
-  font-family: 'lato', sans-serif;
+  font-family: 'opensans', sans-serif;
   &-item {
     cursor: pointer;
     display: inline-block;
@@ -335,7 +342,7 @@ body {
         border: 2px solid #ccc;;
         position: relative;
         font-size: 14pt;
-        font-family: 'opensans', sans-serif;
+        font-family: 'gotham', sans-serif;
         background: none;
        &:focus {
         border: 2px solid red;
@@ -361,7 +368,7 @@ body {
         color: @title-text;
       }
       &-button {
-        position: relative;
+      position: relative;
       height: 50px;
       width: 200px;
       margin-top: 10px;
@@ -371,6 +378,8 @@ body {
       color: #fff;
       text-transform: uppercase;
       letter-spacing: 1.5pt;
+      font-weight: 600;
+      font-family: 'lato', sans-serif;
       border: none;
       outline: none;
       }
@@ -395,6 +404,7 @@ body {
         padding-bottom: 10px;
         font-weight: 600;
         font-size: 18pt;
+        font-family: 'opensans', sans-serif;
       }
       &-link {
         color: @subtitle-text;
