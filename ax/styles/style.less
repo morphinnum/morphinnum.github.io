@@ -1,0 +1,291 @@
+@font-face {
+   font-family: 'opensans';
+   src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.ttf') format("truetype"),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'opensans';
+   src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.ttf') format("truetype"),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'raleway';
+   src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.ttf') format("truetype"),
+        url('../fonts/Raleway-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'raleway';
+   src: url('../fonts/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/Raleway-Light.ttf') format("truetype"),
+        url('../fonts/Raleway-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 1100px;
+}
+.header {
+  background: url(../images/bg.jpg) no-repeat fixed;
+  width: 100%;
+  height: 800px;
+  padding: 40px 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  &-menu {
+    position: absolute;
+    padding-left: 514px;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'opensans', sans-serif;
+    font-weight: 600;
+    background: rgb(0, 0, 0);
+    &::before {
+      content: url(../images/logo-n.jpg);
+      height: 27px;
+      width: 79px;
+      position: absolute;
+      left: 141px;
+      top: 19px;
+    }
+      &-item {
+      cursor: pointer;
+      display: inline-block;
+      line-height: 70px;
+      vertical-align: middle;
+      padding: 0 15px;
+      transition: all .3s .01s ease;
+       &:hover {
+          background: darken(rgba(33, 33, 33, 0.2), 10%);
+       }
+       &:active {
+      background: lighten(rgba(33, 33, 33, 0.5), 10%)
+       }
+       a {
+        text-decoration: none;
+        color: #fff;
+         }
+        a:visited {
+            color: darken(#fff, 10%); 
+           }
+        a:active {
+            color: lighten(#fff, 10%);
+        }
+      }
+  }
+  &-box {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'raleway', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 17px;
+    &-logo {
+      background-image: url(../images/logo.png);
+      width: 175px;
+      height: 60px;
+    }
+    &-subtitle {
+      padding: 25px 0;
+      font-weight: 400;
+      font-size: 34px;
+    }
+    &-line {
+      padding-bottom: 30px;
+      display: block;
+      width: 70px;
+      border-top: solid 2px rgb(255, 255, 255);
+    }
+    &-button {
+      display: block;
+      cursor: pointer;
+      user-select: none;
+      outline: none; 
+      margin-top: 35px;
+      height: 46px;
+      width: 143px;
+      font-family: 'opensans', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      background: transparent;
+      border: solid 2px;
+      transition: all 0.3s 0.01s ease;
+      &:hover {
+          background: darken(rgba(33, 33, 33, 0.5), 10%)
+      }
+      &:active {
+          background: lighten(rgba(33, 33, 33, 0.5), 10%)
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      a:visited {
+        color: darken(#fff, 10%); 
+      }
+      a:active {
+        color: lighten(#fff, 10%);
+      }
+    }
+  }
+  &-form {
+    margin-left: 140px;
+    margin-top: 30px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: 'opensans', sans-serif;
+    input, textarea {
+      display: block;
+      padding: 40px 0 5px 18px;
+      margin-left: 25px;
+      border: none;
+      border-bottom: 1px solid #d4d4d4;
+      outline: 0;
+      width: 80%;
+    }
+    &-title {
+      background-color: rgb(245, 245, 245);
+      height: 60px;
+      margin-left: -15px;
+      margin-bottom: 20px;
+      width: 353px;
+      border-radius: 10px 10px 0 0;
+      padding-top: 9px;
+      font-family: 'opensans', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      &-f {
+        color: rgb(255, 155, 81);
+      }
+    }
+    &-button {
+      background-color: rgb(255, 155, 81);
+      height: 65px;
+      margin-left: -15px;
+      margin-top: 57px;
+      width: 353px;
+      border: none;
+      border-radius: 0 0 10px 10px;
+      padding-top: 9px;
+      font-family: 'opensans', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      cursor: pointer;
+      user-select: none;
+      outline: none; 
+      transition: all 0.3s 0.01s ease;
+      &:hover {
+          background: darken(rgba(33, 33, 33, 0.5), 10%)
+      }
+      &:active {
+          background: lighten(rgba(33, 33, 33, 0.5), 10%)
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      a:visited {
+        color: darken(#fff, 10%); 
+      }
+      a:active {
+        color: lighten(#fff, 10%);
+      }
+    }
+  }
+  &-social {
+    width: 100%;
+    height: 100px;
+    margin-top: 131px;
+    background-color: #fff;
+    font-family: 'opensans', sans-serif;
+    font-size: 17px;
+    color: #808080;
+    &-info {
+      position: relative;
+      text-align: left;
+      width: 600px;
+      padding: 20px 2px 0 108px;
+      &-title {
+        font-weight: 600;
+        font-size: 18px;
+        color: #2d2d2d;
+      }
+    }
+  &-icons {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 30px;
+    right: 45px;
+    display: flex;
+    &-1 {
+      background-image: url(../images/fb.jpg);
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+    }
+    &-2 {
+      background-image: url(../images/tw.jpg);
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+    }
+    &-3 {
+      background-image: url(../images/g.jpg);
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+    }
+    &-4 {
+      background-image: url(../images/pin.jpg);
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+    }
+    &-5 {
+      background-image: url(../images/inst.jpg);
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+    }
+    &-6 {
+      background-image: url(../images/w.jpg);
+      width: 53px;
+      height: 40px;
+      margin-right: 20px;
+    }
+    &-7 {
+      background-image: url(../images/n.jpg);
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+    }
+  }
+  }
+}
