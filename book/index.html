@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>new</title>
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css">
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('.more').click(function(){
+		$(this).parent().children('div.full, p.full').toggle('normal');
+		return false;
+		});
+		});
+	</script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+
+
+
+</head>
+<body>
+	<section class="post">
+		<div class="wrap">
+			<img src="images/book.png" class="post-pic img-responsive"></img>
+			<div class="post-script">
+				<div class="post-script-title">Лоуренс Леві «Планета Pixar»</div>
+				<img src="images/rating.png" class="post-script-rating img-responsive"></img>
+				<button class="post-script-button"><a href="#submit">Отримати безкоштовно</a></button>
+				<div class="post-script-text">Найкраща книжка про лідерство та бізнес 2016 року за версією Amazon, видання, що опинилося у топ-списках біографічної літератури багатьох авторитетних американських ЗМІ. Лоуренс Леві, успішний юрист із Кремнієвої долини, 1994 року отримав пропозицію від Стіва Джобса стати фінансовим директором компанії Pixar. Тоді це був сумнівний стартап бізнесмена, який не витримав інтриг великої корпорації.
+				<div class="sub_block full pull-right">
+					<div class="more">
+					    <span style="cursor: pointer;">Більше</span>
+					</div>
+				<div class="full">У Pixar було вкладено чимало грошей, але ніхто з топ-менеджерів студії не розумів, куди рухатися далі. Для цього Джобс і шукав людину, яка б відповідала головному принципу кіностудії – партнерству, хоча без відданості тут теж не обійшлося. За дванадцять років Леві розробив і втілив у життя стратегію розвитку, що стала запорукою успіху й багатомільйонних прибутків. «Планета Pixar» – це не лише історія розвитку комп’ютерної анімації, оповідь про унікальний союз креативності й технологій, а й досвід людини, що не побоялася дослухатися свого внутрішнього чуття. Лоуренс Леві, описуючи власне захоплення, яке відчув, уперше опинившись у студії, лише підтверджує наявність неперевершеної піксарівської магії, добре знаної нам з мультиків для дітей, а більше для дорослих, що регулярно сумують за простими дивами.</div></div>
+				<p class="post-script-text-link">http://www.the-village.com.ua</p>
+			</div>
+			</div>
+
+			<div class="post-signature">
+				<div class="post-signature-text">Ця електронна копія книги є подарунком групи компаній "Алло" нашим клієнтам.
+				Ми маємо надію, що натхнення, яке вона принесе читачам, сприятиме початку нових соціальних або бізнес-проектів, які стануть успішними та відомими не тільки в Україні, а й в усьому світі.</div>
+				<div class="post-signature-initials">З найкращими побажаннями,<br>
+				СЕО групи компаній "Алло"<br>
+				Максим Раскін</div>
+			</div>
+			<div class="post-subscription">
+				<div class="post-subscription-rules">Щоб отримати електронну копію книги, введіть у форму що нижче вашу електронну адресу:</div>
+				<div class="post-subscription-features">
+					<p class="radio"><label><input name="type" type="radio" value="pdf">PDF</label></p>
+				    <p class="radio"><label><input name="type" type="radio" value="epub">ePub</label></p>
+				    <p class="radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
+				    <p class="radio post-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="agree"/>З правилами згоден</label></p>
+
+				</div>
+				<div>
+					<form class="post-subscription-form">
+						<input id='submit' class="post-subscription-form-email" type="email" placeholder="Email Adress" name="email" required>
+						<input class="post-subscription-form-submit" type="submit" value="ОТРИМАТИ">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
