@@ -12,9 +12,9 @@
 <script type="text/javascript">
 function check()
 {
-    var tx_1 = document.getElementById('tx_1');
+    var tx_1 = document.getElementById('email');
     var ch_1 = document.getElementById('ch_1');
-    var btn = document.getElementById('btn');
+    var btn = document.getElementById('validate');
     tx_1.value != '' && ch_1.checked ? btn.disabled = false : btn.disabled = true;
 }
 </script>
@@ -55,9 +55,9 @@ function check()
 				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
 
 				    <p class="post-subscription-features-radio post-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="ch_1" onclick="check();"/>З правилами згоден</label></p>
-						<p class="post-subscription-submit"><input type="email" id='tx_1' onkeyup="check();" onkeypress="check();" onchange="check();" class="post-subscription-form-email" placeholder="Email Adress" name="email" required>
+						<p class="post-subscription-submit"><input type="email" id='email' onkeyup="check();" onkeypress="check();" onchange="check();" class="post-subscription-form-email" placeholder="Email Adress" name="email" required>
 						
-						<input type="submit" name="GO" id="btn" class="post-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" onclick="alert('Register OK!')"></p>
+						<input type='submit' id='validate' name="GO" class="post-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" ></p>
 					</form>
 
 					<div class="post-subscription-message" >
@@ -66,7 +66,6 @@ function check()
 					</div>
 
 				</div>
-			
 			</div>
 		</div>
 	</section>
