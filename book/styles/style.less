@@ -94,6 +94,9 @@ body {
 			font-family: 'gotham', sans-serif;
 			font-size: 13pt;
     		line-height: 21pt;
+    		&-crop {
+				display: none;
+			}
     		&-link {
 			    float: right!important;
 			    margin-right: -68px;
@@ -131,9 +134,13 @@ body {
 			&-checkbox{
 				padding-left: 25px;
 			}
+			&-radio {
+				display: inline-block;
+			}
 		}
 		&-form {
 			&-email {
+				margin-right: 90px;
 				height: 35px;
     			width: 432px;
     			padding-left: 10px;
@@ -145,7 +152,7 @@ body {
 				cursor: pointer;
 				height: 50px;
 				width: 140px;
-				margin-left: 40px;
+				margin-left: -60px;
 				font-family: 'gotham', sans-serif;
 				font-size: 13pt;
 				background-color: rgb(247, 0, 4);
@@ -163,44 +170,28 @@ body {
 	}
 }
 
+.post-subscription-form-submit[disabled]{
+	background-color: lighten(rgb(247, 0, 4), 40%);
+}
+
 .sub_block.full {
 	display: block;
 	float: right !important;
 	padding: 0;
 }
-.full {
-	display: none;
-}
-.more {
-	text-decoration: underline;
-	float: right !important;
-	&:hover {
-		color: darken(#2681E1, 20%)
-	}
-}
-.radio {
-	display: inline-block;
-}
 
-a{
+
+#post-script-button{
 	text-decoration: none;
 	color: #fff;
 }
-.crop {
-	display: none;
-}
-.trigger {
-	font-family: 'gotham', sans-serif;
-	font-size: 12pt;
-	line-height: 21pt;
-	outline: none;
-	border: none;
-	background-color: #fff;
+
+#open1 {
 	text-decoration: underline;
 	cursor: pointer;
-	margin-top: 0;
 }
-.place {
+
+.spoiler-place {
 	float: right;
 	display: inline-block;
 }

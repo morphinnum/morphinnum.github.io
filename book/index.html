@@ -3,15 +3,21 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>new</title>
-	<link rel="stylesheet" media="screen" href="css/bootstrap.css">
-	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
 
 	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="styles/style.css">
-
+<script type="text/javascript">
+function check()
+{
+    var tx_1 = document.getElementById('tx_1');
+    var ch_1 = document.getElementById('ch_1');
+    var btn = document.getElementById('btn');
+    tx_1.value != '' && ch_1.checked ? btn.disabled = false : btn.disabled = true;
+}
+</script>
 
 
 </head>
@@ -22,11 +28,11 @@
 			<div class="post-script">
 				<div class="post-script-title new">Лоуренс Леві «Планета Pixar»</div>
 				<div class="new"><img src="images/rating.png" class="post-script-rating img-responsive"></img></div>
-				<div class="new"><button class="post-script-button"><a href="#submit">Отримати безкоштовно</a></button></div>
+				<div class="new"><button class="post-script-button"><a href="#tx_1" id='post-script-button'>Отримати безкоштовно</a></button></div>
 				<div class="post-script-text">Найкраща книжка про лідерство та бізнес 2016 року за версією Amazon, видання, що опинилося у топ-списках біографічної літератури багатьох авторитетних американських ЗМІ. Лоуренс Леві, успішний юрист із Кремнієвої долини, 1994 року отримав пропозицію від Стіва Джобса стати фінансовим директором компанії Pixar. Тоді це був сумнівний стартап бізнесмена, який не витримав інтриг великої корпорації.
 				<div class="sub_block full">
-				<div id="hideImg" class="crop">У Pixar було вкладено чимало грошей, але ніхто з топ-менеджерів студії не розумів, куди рухатися далі. Для цього Джобс і шукав людину, яка б відповідала головному принципу кіностудії – партнерству, хоча без відданості тут теж не обійшлося. За дванадцять років Леві розробив і втілив у життя стратегію розвитку, що стала запорукою успіху й багатомільйонних прибутків. «Планета Pixar» – це не лише історія розвитку комп’ютерної анімації, оповідь про унікальний союз креативності й технологій, а й досвід людини, що не побоялася дослухатися свого внутрішнього чуття. Лоуренс Леві, описуючи власне захоплення, яке відчув, уперше опинившись у студії, лише підтверджує наявність неперевершеної піксарівської магії, добре знаної нам з мультиків для дітей, а більше для дорослих, що регулярно сумують за простими дивами.</div>
-     <div class="place"><button onclick="w3.toggleShow('#hideImg')" class="trigger">Більше</button></div>
+				<div id="hidd1" class="post-script-text-crop">У Pixar було вкладено чимало грошей, але ніхто з топ-менеджерів студії не розумів, куди рухатися далі. Для цього Джобс і шукав людину, яка б відповідала головному принципу кіностудії – партнерству, хоча без відданості тут теж не обійшлося. За дванадцять років Леві розробив і втілив у життя стратегію розвитку, що стала запорукою успіху й багатомільйонних прибутків. «Планета Pixar» – це не лише історія розвитку комп’ютерної анімації, оповідь про унікальний союз креативності й технологій, а й досвід людини, що не побоялася дослухатися свого внутрішнього чуття. Лоуренс Леві, описуючи власне захоплення, яке відчув, уперше опинившись у студії, лише підтверджує наявність неперевершеної піксарівської магії, добре знаної нам з мультиків для дітей, а більше для дорослих, що регулярно сумують за простими дивами.</div>
+     <div class="spoiler-place"><span id="open1">Більше</span></div>
      <p class="post-script-text-link">the-village.com.ua</p></div>
 				
 			</div>
@@ -39,24 +45,22 @@
 				СЕО групи компаній "Алло"<br>
 				<p style="font-style: italic; margin: 0;">Максим Раскін</p></div>
 			</div>
+
 			<div class="post-subscription">
 				<div class="post-subscription-rules">Щоб отримати електронну копію книги, введіть у форму що нижче вашу електронну адресу:</div>
 				<div class="post-subscription-features">
-					<p class="radio"><label><input name="type" type="radio" value="pdf">PDF</label></p>
-				    <p class="radio"><label><input name="type" type="radio" value="epub">ePub</label></p>
-				    <p class="radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
-				    <p class="radio post-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="agree"/>З правилами згоден</label></p>
-
-				</div>
-				<div>
-					<form class="post-subscription-form">
-						<input id='submit' class="post-subscription-form-email" type="email" placeholder="Email Adress" name="email" required>
-						<input class="post-subscription-form-submit" type="submit" value="ОТРИМАТИ">
+				 <form action="#" class="post-subscription-form">
+					<p class="post-subscription-features-radio"><label><input name="type" type="radio" value="pdf">PDF</label></p>
+				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="epub">ePub</label></p>
+				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
+				    <p class="post-subscription-features-radio post-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="ch_1" onclick="check();"/>З правилами згоден</label></p>
+						<input type="email" id='tx_1' onkeyup="check();" onkeypress="check();" onchange="check();" class="post-subscription-form-email" placeholder="Email Adress" name="email" required>
+						<input type="button" id="btn" class="post-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" onclick="alert('Register OK!')">
 					</form>
 				</div>
+			
 			</div>
 		</div>
-		
 	</section>
 </body>
 </html>
