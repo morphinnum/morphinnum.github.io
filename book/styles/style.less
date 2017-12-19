@@ -40,6 +40,13 @@ body {
     padding: 80px 20px;
     max-width: 980px;
 }
+.img {
+	display: inline-block;
+		height: 400px;
+	    vertical-align: top;
+	    margin-top: -15px;
+	    padding-bottom: 25px;
+}
 .post{
 	&-pic {
 		display: inline-block;
@@ -51,7 +58,7 @@ body {
 	}
 	&-script {
 		display: inline-block;
-		width: 650px;
+		width: 66%;
 		cursor: default;
 		&-title {
 			font-size: 22pt;
@@ -88,7 +95,6 @@ body {
 			font-size: 13pt;
     		line-height: 21pt;
     		&-link {
-    			text-decoration: underline;
 			    float: right!important;
 			    margin-right: -65px;
 			    padding-top: 35px;
@@ -116,7 +122,7 @@ body {
 		font-size: 13pt;
 		font-weight: 500;
 		padding-top: 130px;
-		float: center;
+		padding-left: 15px;
 		&-rules {
 			line-height: 21pt;
 		}
@@ -180,6 +186,24 @@ a{
 	text-decoration: none;
 	color: #fff;
 }
+.crop {
+	display: none;
+}
+.trigger {
+	font-family: 'gotham', sans-serif;
+	font-size: 12pt;
+	line-height: 21pt;
+	outline: none;
+	border: none;
+	background-color: #fff;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.place {
+	float: right;
+	display: inline-block;
+}
 
 @media all and (max-width: 768px) {
 	.wrap {
@@ -188,14 +212,16 @@ a{
 	    }
 	.post-pic {
 		height: 380px;
+	    margin: 0;
+	    padding-right: 0;
 	}    
 	.post-script-title {
 		width: 350px;
 	}
 	.post-script {
 		padding-left: 5px;
-		&-text {
-			width: 320px;
+		width: 100%;
+		&-text {  
 			font-size: 12pt;
 			line-height: 19pt;
 			&-link {
@@ -210,11 +236,23 @@ a{
 	    padding-bottom: 15px;
 	}
 	.post-subscription-form-email {
-		width: 280px;
+		width: 96%;
 	}
 	.post-subscription-form-submit {
 		display: block;
 		margin: 0;
 		margin-top: 10px;
+	}
+	.img {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.new {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
 	}
 }
