@@ -8,13 +8,5 @@ $('.post-script a').click(function(){
          scrollTop: destination
      }, 500);
  });
-$('#hideImg1').click(function(){
-  $('#hideImg').hide();
-}); 
- 
-
-$('#showImg1').click(function(){
-  $('#hideImg').show();
-});
 
 });
