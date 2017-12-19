@@ -40,7 +40,7 @@ body {
     padding: 80px 20px;
     max-width: 980px;
 }
-.img {
+.img-book {
 	display: inline-block;
 		height: 400px;
 	    vertical-align: top;
@@ -167,7 +167,15 @@ body {
 		        }
 			}
 		}
+		&-message {
+			display: none;
+		}
 	}
+}
+
+.post-subscription-form-email-error {
+	background: #f4ccd4;
+	border-color: #c80029;	
 }
 
 .post-subscription-form-submit[disabled]{
@@ -194,6 +202,10 @@ body {
 .spoiler-place {
 	float: right;
 	display: inline-block;
+}
+.post-subscription-submit {
+	display: block;
+	width: 100%;
 }
 
 @media all and (max-width: 768px) {

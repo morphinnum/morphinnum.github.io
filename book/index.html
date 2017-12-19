@@ -24,7 +24,7 @@ function check()
 <body>
 	<section class="post">
 		<div class="wrap">
-			<div class="img"><img src="images/book.png" class="post-pic img-responsive"></img></div>
+			<div class="img-book"><img src="images/book.png" class="post-pic img-responsive"></img></div>
 			<div class="post-script">
 				<div class="post-script-title new">Лоуренс Леві «Планета Pixar»</div>
 				<div class="new"><img src="images/rating.png" class="post-script-rating img-responsive"></img></div>
@@ -49,14 +49,22 @@ function check()
 			<div class="post-subscription">
 				<div class="post-subscription-rules">Щоб отримати електронну копію книги, введіть у форму що нижче вашу електронну адресу:</div>
 				<div class="post-subscription-features">
-				 <form action="#" class="post-subscription-form">
+				 <form id="reg_form" action="#" class="post-subscription-form">
 					<p class="post-subscription-features-radio"><label><input name="type" type="radio" value="pdf">PDF</label></p>
 				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="epub">ePub</label></p>
 				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
+
 				    <p class="post-subscription-features-radio post-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="ch_1" onclick="check();"/>З правилами згоден</label></p>
-						<input type="email" id='tx_1' onkeyup="check();" onkeypress="check();" onchange="check();" class="post-subscription-form-email" placeholder="Email Adress" name="email" required>
-						<input type="button" id="btn" class="post-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" onclick="alert('Register OK!')">
+						<p class="post-subscription-submit"><input type="email" id='tx_1' onkeyup="check();" onkeypress="check();" onchange="check();" class="post-subscription-form-email" placeholder="Email Adress" name="email" required>
+						
+						<input type="submit" name="GO" id="btn" class="post-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" onclick="alert('Register OK!')"></p>
 					</form>
+
+					<div class="post-subscription-message" >
+						<p>На ваш e-mail отправлено письмо с&nbsp;подтверждением.
+						Пожалуйста, подтвердите ваш&nbsp;e&#8209;mail</p>
+					</div>
+
 				</div>
 			
 			</div>

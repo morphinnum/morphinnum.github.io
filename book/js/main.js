@@ -15,4 +15,5 @@ $('#open' + ind).click(function(){
     hBlock.toggle('slow');
 });
 
+
 });
