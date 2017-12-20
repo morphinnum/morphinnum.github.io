@@ -1,13 +1,13 @@
-$(document).ready(function(e) {
+$(document).ready(function($) {
 
 
-$('.post-script a').click(function(){
+$('.postpixar-script a').click(function(){
   var elementClick = $(this).attr("href");
   var destination = $(elementClick).offset().top;
      $('html, body').animate({
          scrollTop: destination
      }, 500);
- });
+});
 var ind = 1;
 $('#open' + ind).click(function(){
     var hBlock = $('#hidd' + ind);
@@ -17,4 +17,4 @@ $('#open' + ind).click(function(){
 
 
 
-});
+})(jQuery);

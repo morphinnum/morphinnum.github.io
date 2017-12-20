@@ -10,9 +10,41 @@
 	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="styles/style.css">
 <script type="text/javascript">
+$(document).ready(function() {  
+ $("#emailbook").keyup(function(){
+    
+    var email = $("#emailbook").val();
+  
+    if(email != 0)
+    {
+    if(isValidEmailAddress(email))
+    {
+    $("#validEmailbook").css({
+  "background-image": "url('images/validYes.png')"
+    });
+    } else {
+    $("#validEmailbook").css({
+  "background-image": "url('images/validNo.png')"
+    });
+    }
+    } else {
+    $("#validEmailbook").css({
+  "background-image": "none"
+    }); 
+    }
+  
+    });
+  
+    });
+  
+    function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    return pattern.test(emailAddress);
+    }
+
 function check()
 {
-    var tx_1 = document.getElementById('email');
+    var tx_1 = document.getElementById('emailbook');
     var ch_1 = document.getElementById('ch_1');
     var btn = document.getElementById('validate');
     tx_1.value != '' && ch_1.checked ? btn.disabled = false : btn.disabled = true;
@@ -22,45 +54,45 @@ function check()
 
 </head>
 <body>
-	<section class="post">
-		<div class="wrap">
-			<div class="img-book"><img src="images/book.png" class="post-pic img-responsive"></img></div>
-			<div class="post-script">
-				<div class="post-script-title new">Лоуренс Леві «Планета Pixar»</div>
-				<div class="new"><img src="images/rating.png" class="post-script-rating img-responsive"></img></div>
-				<div class="new"><button class="post-script-button"><a href="#validate" id='post-script-button'>Отримати безкоштовно</a></button></div>
-				<div class="post-script-text">Найкраща книжка про лідерство та бізнес 2016 року за версією Amazon, видання, що опинилося у топ-списках біографічної літератури багатьох авторитетних американських ЗМІ. Лоуренс Леві, успішний юрист із Кремнієвої долини, 1994 року отримав пропозицію від Стіва Джобса стати фінансовим директором компанії Pixar. Тоді це був сумнівний стартап бізнесмена, який не витримав інтриг великої корпорації.
+	<section class="postpixar">
+		<div class="bookwrap">
+			<div class="imgpixarbook"><img src="images/book.png" class="postpixar-pic img-responsive"></img></div>
+			<div class="postpixar-script">
+				<div class="postpixar-script-title newbook">Лоуренс Леві «Планета Pixar»</div>
+				<div class="new"><img src="images/rating.png" class="postoixar-script-rating img-responsive"></img></div>
+				<div class="new"><button class="postpixar-script-button"><a href="#validate" id='postpixar-script-button'>Отримати безкоштовно</a></button></div>
+				<div class="postpixar-script-text">Найкраща книжка про лідерство та бізнес 2016 року за версією Amazon, видання, що опинилося у топ-списках біографічної літератури багатьох авторитетних американських ЗМІ. Лоуренс Леві, успішний юрист із Кремнієвої долини, 1994 року отримав пропозицію від Стіва Джобса стати фінансовим директором компанії Pixar. Тоді це був сумнівний стартап бізнесмена, який не витримав інтриг великої корпорації.
 				<div class="sub_block full">
-				<div id="hidd1" class="post-script-text-crop">У Pixar було вкладено чимало грошей, але ніхто з топ-менеджерів студії не розумів, куди рухатися далі. Для цього Джобс і шукав людину, яка б відповідала головному принципу кіностудії – партнерству, хоча без відданості тут теж не обійшлося. За дванадцять років Леві розробив і втілив у життя стратегію розвитку, що стала запорукою успіху й багатомільйонних прибутків. «Планета Pixar» – це не лише історія розвитку комп’ютерної анімації, оповідь про унікальний союз креативності й технологій, а й досвід людини, що не побоялася дослухатися свого внутрішнього чуття. Лоуренс Леві, описуючи власне захоплення, яке відчув, уперше опинившись у студії, лише підтверджує наявність неперевершеної піксарівської магії, добре знаної нам з мультиків для дітей, а більше для дорослих, що регулярно сумують за простими дивами.</div>
+				<div id="hidd1" class="postpixar-script-text-crop">У Pixar було вкладено чимало грошей, але ніхто з топ-менеджерів студії не розумів, куди рухатися далі. Для цього Джобс і шукав людину, яка б відповідала головному принципу кіностудії – партнерству, хоча без відданості тут теж не обійшлося. За дванадцять років Леві розробив і втілив у життя стратегію розвитку, що стала запорукою успіху й багатомільйонних прибутків. «Планета Pixar» – це не лише історія розвитку комп’ютерної анімації, оповідь про унікальний союз креативності й технологій, а й досвід людини, що не побоялася дослухатися свого внутрішнього чуття. Лоуренс Леві, описуючи власне захоплення, яке відчув, уперше опинившись у студії, лише підтверджує наявність неперевершеної піксарівської магії, добре знаної нам з мультиків для дітей, а більше для дорослих, що регулярно сумують за простими дивами.</div>
      <div class="spoiler-place"><span id="open1">Більше</span></div>
-     <p class="post-script-text-link">the-village.com.ua</p></div>
+     <p class="postpixar-script-text-link">the-village.com.ua</p></div>
 				
 			</div>
 			</div>
 
-			<div class="post-signature">
-				<div class="wrap post-signature-text">Ця електронна копія книги є подарунком групи компаній "Алло" нашим клієнтам.
+			<div class="postpixar-signature">
+				<div class="bookwrap postpixar-signature-text">Ця електронна копія книги є подарунком групи компаній "Алло" нашим клієнтам.
 				Ми маємо надію, що натхнення, яке вона принесе читачам, сприятиме початку нових соціальних або бізнес-проектів, які стануть успішними та відомими не тільки в Україні, а й в усьому світі.</div>
-				<div class="post-signature-initials">З найкращими побажаннями,<br>
+				<div class="postpixar-signature-initials">З найкращими побажаннями,<br>
 				СЕО групи компаній "Алло"<br>
 				<p style="font-style: italic; margin: 0;">Максим Раскін</p></div>
 			</div>
 
-			<div class="post-subscription">
-				<div class="post-subscription-rules">Щоб отримати електронну копію книги, введіть у форму що нижче вашу електронну адресу:</div>
-				<div class="post-subscription-features">
-				 <form id="reg_form" action="#" class="post-subscription-form">
-					<p class="post-subscription-features-radio"><label><input name="type" type="radio" value="pdf">PDF</label></p>
-				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="epub">ePub</label></p>
-				    <p class="post-subscription-features-radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
+			<div class="postpixar-subscription">
+				<div class="postpixar-subscription-rules">Щоб отримати електронну копію книги, введіть у форму що нижче вашу електронну адресу:</div>
+				<div class="postpixar-subscription-features">
+				 <form id="reg_form" action="#" class="postpixar-subscription-form">
+					<p class="postpixar-subscription-features-radio"><label><input name="type" type="radio" value="pdf">PDF</label></p>
+				    <p class="postpixar-subscription-features-radio"><label><input name="type" type="radio" value="epub">ePub</label></p>
+				    <p class="postpixar-subscription-features-radio"><label><input name="type" type="radio" value="mobi" checked>Mobi</label></p>
 
-				    <p class="post-subscription-features-radio post-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="ch_1" onclick="check();"/>З правилами згоден</label></p>
-						<p class="post-subscription-submit"><input type="email" id='email' onkeyup="check();" onkeypress="check();" onchange="check();" class="post-subscription-form-email" placeholder="Email Adress" name="email" required>
+				    <p class="postpixar-subscription-features-radio postpixar-subscription-features-checkbox"><label><input type="checkbox" name="checkme" id="ch_1" onclick="check();"/>З правилами згоден</label></p>
+						<p class="postpixar-subscription-submit"><div style="display: inline-block;"><input type="email" id='emailbook' onkeyup="check();" onkeypress="check();" onchange="check();" class="postpixar-subscription-form-email" placeholder="Email Adress" name="email" required><span id="validEmailbook"></span></div>
 						
-						<input type='submit' id='validate' name="GO" class="post-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" title="Ви маєте погодитись з правилами та ввести email-адресу" ></p>
+						<input type='submit' id='validate' name="GO" class="postpixar-subscription-form-submit"  value="ОТРИМАТИ" disabled="disabled" title="Ви маєте погодитись з правилами та ввести email-адресу" ></p>
 					</form>
 
-					<div class="post-subscription-message" >
+					<div class="postpixar-subscription-message" id="message">
 						<p>На ваш e-mail отправлено письмо с&nbsp;подтверждением.
 						Пожалуйста, подтвердите ваш&nbsp;e&#8209;mail</p>
 					</div>

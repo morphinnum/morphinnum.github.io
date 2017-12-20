@@ -35,19 +35,19 @@ body {
     padding: 0;
     font-family: 'gotham', sans-serif;
 }
-.wrap {
+.bookwrap {
     margin: 0 auto;
     padding: 80px 20px;
     max-width: 980px;
 }
-.img-book {
+.imgpixarbook {
 	display: inline-block;
 		height: 400px;
 	    vertical-align: top;
 	    margin-top: -15px;
 	    padding-bottom: 25px;
 }
-.post{
+.postpixar{
 	&-pic {
 		display: inline-block;
 		height: 400px;
@@ -100,7 +100,8 @@ body {
     		&-link {
 			    float: right!important;
 			    margin-right: -68px;
-			    padding-top: 35px;
+			    padding-top: 15px;
+    			margin-top: 23px;
     		}
 		}
 	}
@@ -173,12 +174,12 @@ body {
 	}
 }
 
-.post-subscription-form-email-error {
+.postpixar-subscription-form-email-error {
 	background: #f4ccd4;
 	border-color: #c80029;	
 }
 
-.post-subscription-form-submit[disabled]{
+.postpixar-subscription-form-submit[disabled]{
 	background-color: lighten(rgb(247, 0, 4), 40%);
 }
 
@@ -189,7 +190,7 @@ body {
 }
 
 
-#post-script-button{
+#postpixar-script-button{
 	text-decoration: none;
 	color: #fff;
 }
@@ -203,56 +204,69 @@ body {
 	float: right;
 	display: inline-block;
 }
-.post-subscription-submit {
+.postpixar-subscription-submit {
 	display: block;
 	width: 100%;
 }
 
+#validEmailbook
+    {
+    margin-top: 9px;
+    margin-left: -80px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    }
+
 @media all and (max-width: 768px) {
-	.wrap {
+	.bookwrap {
 	    padding: 40px 15px;
 	    max-width: 768px;
 	    }
-	.post-pic {
+	.postpixar-pic {
 		height: 380px;
 	    margin: 0;
 	    padding-right: 0;
 	}    
-	.post-script-title {
+	.postpixar-script-title {
 		width: 350px;
 	}
-	.post-script {
+	.postpixar-script {
 		width: 100%;
 		&-text {  
 			font-size: 12pt;
 			line-height: 19pt;
 		}
 	}
-	.post-subscription-features-checkbox {
+	.postpixar-subscription-features-checkbox {
 		display: block;
 		padding: 0;
 	    margin: 0;
 	    padding-bottom: 15px;
 	}
-	.post-subscription-form-email {
+	.postpixar-subscription-form-email {
 		width: 96%;
 	}
-	.post-subscription-form-submit {
+	.postpixar-subscription-form-submit {
 		display: block;
 		margin: 0;
 		margin-top: 10px;
 	}
-	.img {
+	.imgpixarbook {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		text-align: center;
 	}
-	.new {
+	.newbook {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		text-align: center;
 		margin-left: -13px;
+	}
+	#validEmailbook {
+    margin-top: -29px;
+    margin-left: -22px;  
 	}
 }
